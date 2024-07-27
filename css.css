@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    color: #00FF00;
+    font-size: 30px;
+    width: 150px;
+    text-align: center;
+    background: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00FF00;
+    margin: 10px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #006400;
+    background-color: #006400;
+    color: #00FF00;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #006400;
+    color: #00FF00;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
