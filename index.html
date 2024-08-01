@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>predefined javaScript objects</title>
     <style>
+        html,
         body {
             margin: 0px;
             padding: 0px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
             background-color: black;
             color: #00FF00;
             font-family: monospace;
@@ -22,16 +29,21 @@
             font-weight: normal;
         }
 
-        #head {
+        header {
+            margin-top: 10px;
             margin-right: 10px;
             display: flex;
             justify-content: flex-end;
         }
 
+        main {
+            margin-bottom: 10px;
+            flex: 1;
+        }
+
         .home,
         .doc,
         .git {
-            margin-top: 10px;
             width: 100px;
         }
 
@@ -49,32 +61,35 @@
         }
 
         footer {
-            bottom: 0px;
             width: 100%;
             background-color: #006400;
             color: #00FF00;
             text-align: center;
-            position: fixed;
         }
     </style>
     <script src="js.js"></script>
 </head>
 
 <body>
-    <div id="head">
+    <header>
         <button class="doc" onclick="goDoc()">doc</button>
         <button class="git" onclick="goGit()">git</button>
         <button class="home" onclick="goHome()">back</button>
-    </div>
-    <h1>predefined javaScript objects</h1>
-    <h2>sergio lópez</h2>
-    <p>reloj digital</p>
-    <!-- onclick activa la funcion openclock() -->
-    <button id="open" onclick="openclock()">dame la hora</button>
-</body>
+    </header>
 
-<footer>
-    <h3>desarrollo web entorno cliente</h3>
-</footer>
+    <main>
+        <h1>predefined javaScript objects</h1>
+        <h2>sergio lópez</h2>
+        <p>reloj digital</p>
+        <!-- onclick activa la funcion openclock() -->
+        <button id="open" onclick="openclock()">dame la hora</button>
+
+    </main>
+
+    <footer>
+        <h3>desarrollo web entorno cliente</h3>
+    </footer>
+
+</body>
 
 </html>

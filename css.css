@@ -29,12 +29,3 @@ button {
     color: #00FF00;
     cursor: pointer;
 }
-
-footer {
-    background-color: #006400;
-    color: #00FF00;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
